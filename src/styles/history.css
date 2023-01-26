@@ -1,0 +1,25 @@
+/* Historia de los Pokemons */
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.history h1 {
+    font-size: 70px;
+    padding: 60px 0 20px 0;
+    color: red;
+    text-decoration-line: underline;
+}
+.history img {
+    width: 70%;
+    padding: 50px;
+}
+.history p {
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 0;
+}

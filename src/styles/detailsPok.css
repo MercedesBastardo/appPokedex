@@ -1,0 +1,105 @@
+/* La tarjeta detallada */
+.idCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.pokedexId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 4px groove rgb(16, 15, 15);
+    background-image: linear-gradient(to left bottom, transparent, rgb(84, 69, 69));
+    border-radius: 50% 2rem;
+    flex-wrap: wrap;  
+}
+.pokedexId .part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.pokedexId .part1 img {
+    width: 250px;
+    height: 250px;
+}
+.pokedexId .part1 .measure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.pokedexId .part1 .measure h4 {
+    font-size: 20px;
+    color: rgb(226, 146, 146); 
+}
+.pokedexId .part1 .lotation i, a { 
+    color: rgb(129, 129, 45);
+    font-size: 18px;
+    padding-right: 10px;
+}
+.pokedexId .part1 .lotation a { 
+    color: rgb(129, 129, 45);
+    font-size: 20px;
+}
+.pokedexId .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.pokedexId .part2 h1 {
+    font-size: 50px;
+    color: rgb(75, 75, 60);
+    padding: 10px;
+}
+.pokedexId .part2 h2 {
+    font-size: 30px;
+    color: rgb(75, 75, 60);
+    padding: 10px;
+}
+.pokedexId .part2 .typeDetails {
+    font-size: 20px;
+    color: beige;
+    background-image: linear-gradient(to left bottom, transparent, rgb(50,137,213));
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    border: 2px solid beige;   
+}
+.pokedexId .part2 .abilitisDetails {
+    font-size: 20px;
+    color: rgb(50, 137, 213);
+    background-image: linear-gradient(to left bottom, transparent, beige); 
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid rgb(50, 137, 213);
+    margin: 40px;   
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.pokedexId .part3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    padding: 50px;
+}
+.pokedexId .part3 h2 {
+    font-size: 30px;
+    color: rgb(75, 75, 60);
+}
+.pokedexId .part3 ul {
+    overflow: auto;
+    height: 300px;
+    padding-top: 10px;
+    color: rgb(75, 75, 60);
+}
+

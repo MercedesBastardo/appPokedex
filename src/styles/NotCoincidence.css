@@ -1,0 +1,30 @@
+.toast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, transparent, brown); 
+}
+.toast h1 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: black;
+}
+.toast img {
+    border-radius: 50% 2rem ;
+    height: 500px;
+    width: 500px;
+    border: 4px groove rgb(205, 132, 132);
+}
+.toast h3 {
+    font-size: 30px;
+    color: black;
+}
+.toast h3 a {
+    font-size: 50px;
+    color: aliceblue;
+    text-decoration: dashed;
+    font-weight: bold;
+}

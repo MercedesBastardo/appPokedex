@@ -1,0 +1,43 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.circle img {
+    max-width: 100%;
+    width: 400px;
+    height: 250px;
+}
+.text1 h1 {
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+.text1 h2 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.login form {
+    border: 2px groove yellow;
+}
+.login form input {
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+.login form button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: yellow;
+}
+.text2 h2 {
+    font-size: 100px;
+    background: linear-gradient(yellow,red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: oblique;  
+}

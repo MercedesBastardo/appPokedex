@@ -1,0 +1,216 @@
+/* este es el header del pokedex */
+
+.pokedex .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+}
+.pokedex .header .text {
+    padding-left: 100px;
+}
+.pokedex .header .text h1 {
+    font-size: 40px;
+    color: yellow;
+}
+.pokedex .header .text h2{
+    padding: 10px 0;
+}
+.pokedex .type {
+    padding: 32px; 
+}
+.pokedex .type label {
+    font-size: 15px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+.pokedex .type select {
+    height: 30px;
+    font-size: 15px;
+    color: rgb(84,84,86);
+}
+/* search */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, transparent, brown);
+}
+/* PokemonCard */
+.pokCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 60px;
+}
+.pokemonCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 1rem;
+}
+.typePokemons {
+    border-radius: 50% 1rem;
+    width: 250px;
+    height: 350px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+.typePokemons h1 {
+    color: aliceblue;
+    font-size:20px;
+}
+.typePokemons img {
+    width: 180px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.typePokemons h3 {
+    color: aliceblue;
+    font-size: 20px;
+}
+.typePokemons.bg-green{
+    background-image: linear-gradient(to bottom right, transparent, rgb(147, 217, 147));
+    border: 2px groove green;
+}
+.typePokemons.bg-red-rose{
+    background-image: linear-gradient(to bottom right, transparent, rgb(211, 52, 102));
+    border: 2px groove pink;
+}
+.typePokemons.bg-softblue{
+    background-image: linear-gradient(to bottom right, transparent, rgb(0, 204, 255));
+    border: 2px groove rgb(199, 199, 243);
+}
+.typePokemons.bg-darkgreen{
+    background-image: linear-gradient(to bottom right, transparent, rgb(6, 66, 6));
+    border: 2px groove rgb(197, 245, 197);
+}
+.typePokemons.bg-violetbrouw{
+    background-image: linear-gradient(to bottom right, transparent, rgb(239, 182, 222));
+    border: 2px groove rgb(196, 75, 95);
+}
+.typePokemons.bg-violet{
+    background-image: linear-gradient(to bottom right, transparent, rgb(124, 27, 124));
+    border: 2px groove violet;
+}
+.typePokemons.bg-yellow{
+    background-image: linear-gradient(to bottom right, transparent, rgb(228, 228, 33));
+    border: 2px groove rgb(233, 233, 153)
+}
+.typePokemons.bg-softbrouw{
+    background-image: linear-gradient(to bottom right, transparent, rgb(166, 56, 56));
+    border: 2px groove rgb(199, 153, 153)
+}
+.typePokemons.bg-fuchsia{
+    background-image: linear-gradient(to bottom right, transparent, rgb(202, 43, 104));
+    border:  2px groove pink;
+}
+.typePokemons.bg-blugrey{
+    background-image: linear-gradient(to bottom right, transparent, rgb(99, 135, 174));
+    border: 2px groove rgb(68, 111, 219);
+}
+.typePokemons.bg-brouw{
+    background-image: linear-gradient(to bottom right, transparent, rgb(95, 58, 58));
+    border: 2px groove rgb(155, 133, 133);
+}
+.typePokemons.bg-blueViolet{
+    background-image: linear-gradient(to bottom right, transparent, rgb(81, 81, 112));
+    border: 2px groove rgb(129, 33, 129);
+}
+.typePokemons.bg-greengrey{
+    background-image: linear-gradient(to bottom right, transparent, rgb(109, 117, 109));
+    border: 2px groove rgb(66, 116, 66);
+}
+.typePokemons.bg-bluesoft{
+    background-image: linear-gradient(to bottom right, transparent, rgb(71, 192, 213));
+    border: 2px groove rgb(22, 131, 234);
+}
+.typePokemons.bg-turquoise{
+    background-image: linear-gradient(to bottom right, transparent, rgb(137, 184, 204)); 
+    border: 2px groove rgb(136, 136, 242);
+}
+.typePokemons.bg-softbrown{
+    background-image: linear-gradient(to bottom right, transparent, rgb(222, 65, 65));
+    border: 2px groove burlywood;
+}
+.typePokemons.bg-daskpink{
+    background-image: linear-gradient(to bottom right, transparent, rgb(230, 31, 143));
+    border: 2px groove rgb(239, 138, 154);
+}
+.typePokemons.bg-softblack{
+    background-image: linear-gradient(to bottom right, transparent, rgb(79, 75, 75));
+    border: 2px groove black;
+}
+
+
+/* paginacion */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: red;
+    padding: 40px;
+}
+.pagination button {
+    color: white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 1rem;
+    border: 2px groove rgb(255, 242, 0);
+}
+.pagination .previus {
+    width: 70px;
+    height: 20px;
+}
+.pagination .next {
+    width: 40px;
+    height: 20px;
+}
+
+@media (max-width: 1000px){
+    .pokedex .header .text h1 {
+        font-size: 35px;
+    }
+    .pokedex .text h2 {
+        font-size: 16px;
+    }
+    .pokedex .type label {
+        font-size: 16px;
+    }
+    .pokedex .type select {
+        margin-top: 20px;  
+    }
+    
+}
+@media (max-width: 768px){
+    .pokedex .header .text {
+        padding-left: 30px;
+    }
+    .pokedex .type label {
+        font-size: 14px;
+    }
+    .pokedex .type select {
+        height: 20px;
+        margin-top: 10px;  
+    }
+    .pagination {
+        padding: 30px;
+    }
+}
+
+
