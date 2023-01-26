@@ -70,7 +70,7 @@ const Pokedex = () => {
             <option value="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1279">All Pokemons</option>
                 {
                     type?.map( type => (
-                        <option value={type?.url} key={type?.name}></option>
+                        <option value={type?.url} key={type?.name}> {type?.name} </option>
                     ) )
                 }
             </select>
