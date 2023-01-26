@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 
 
 
+
 const Pokedex = () => {
 
     const [data, setData] = useState([])
@@ -69,7 +70,7 @@ const Pokedex = () => {
             <option value="https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1279">All Pokemons</option>
                 {
                     type?.map( type => (
-                        <option value={type?.url} key={type?.name}>{type?.name}</option>
+                        <option value={type?.url} key={type?.name}></option>
                     ) )
                 }
             </select>
@@ -91,9 +92,11 @@ const Pokedex = () => {
            onClick={()=> setPag( pag - 1)}
            disabled= {pag === 1}
            >Previous</button>
-           {arrayPag.map((numbers)=> { 
+           {arrayPag.map((numbers, index)=> { 
                 return (
-                <button onClick={() => setPag(numbers) }>{numbers}</button>
+                <button 
+                onClick={() => setPag(numbers) } 
+                key={`nro ${index}`}>{numbers}</button>
             )})}
            <button className='next'
            onClick={()=> setPag( pag + 1)}

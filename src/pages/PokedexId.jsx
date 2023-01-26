@@ -30,7 +30,7 @@ const PokedexId = () => {
                     <h4><span>Weight:</span> <span>{pokemon?.weight}</span></h4>
                 </section>
                 <section className='lotation'>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <a href={`${pokemon?.location_area_encounters}`}>Lotation</a>
                 </section>
             </div>
