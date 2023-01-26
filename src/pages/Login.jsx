@@ -1,4 +1,4 @@
-import '../styles/Login.css'
+import '../styles/login.css'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux"
 import { changeName } from '../store/slices/user.slice'
