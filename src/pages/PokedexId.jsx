@@ -23,20 +23,26 @@ const PokedexId = () => {
             <NavBar/>
             <div className='idCard'>
             <div className="pokedexId">
-            <div className='part1'>
-                <img src= {pokemon?.sprites?.other['official-artwork']?.front_default} alt="" />
-                <section className='measure'>
-                    <h4><span>Height:</span> <span>{pokemon?.height}</span></h4>
-                    <h4><span>Weight:</span> <span>{pokemon?.weight}</span></h4>
-                </section>
-                <section className='lotation'>
-                <i className="fa-solid fa-location-dot"></i>
-                <a href={`${pokemon?.location_area_encounters}`}>Lotation</a>
-                </section>
-            </div>
+                <div className='part1'>
+                    <div className='name'>
+                        <h2>{`#${pokemon?.id}`}</h2>
+                        <h1>{pokemon?.name}</h1>
+                        <section className='measure'>
+                            <h4><span>Height:</span> <span>{pokemon?.height}</span></h4>
+                            <h4><span>Weight:</span> <span>{pokemon?.weight}</span></h4>
+                        </section>
+                    </div>
+                    <div className='image'>
+                        <img src= {pokemon?.sprites?.other['official-artwork']?.front_default} alt="" />
+                        <section className='lotation'>
+                        <i className="fa-solid fa-location-dot"></i>
+                        <a href={`${pokemon?.location_area_encounters}`}>Lotation</a>
+                        </section>
+                    </div>
+
+                </div>
             <div className='part2'>
-                <h1>{pokemon?.name}</h1>
-                <h2>{`#${pokemon?.id}`}</h2>
+                
                 <section className='typeDetails'>
                     <h3>Types</h3>
                    <p>{pokemon?.types?.[0]?.type?.name}</p>

@@ -1,4 +1,4 @@
-/* Este es el menu */
+/* this is the menu */
 .navBar {
     background-color: black;
     padding: 10px;
@@ -6,7 +6,15 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.navBar .navBarDesktop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar .navBarMobile {
+    display: none;
+}
 .navBar .image button{
    background-color: black;
    border: none;
@@ -42,11 +50,11 @@ a:-webkit-any-link {
 .navBar form {
     cursor: pointer; 
     display: flex;
-    flex-wrap: wrap;
 }
 .navBar form input {
     height: 30px;
     width: 250px;
+    z-index: 30;
 }
 .navBar form button  {
     height: 25px;
@@ -55,7 +63,8 @@ a:-webkit-any-link {
     background-color: white;
     position: relative;
     right: 30px;
-    top: 3px
+    top: 3px;
+    z-index: 40;
 }
 .navBar .nav img{
     background-color: black;
@@ -72,6 +81,7 @@ a:-webkit-any-link {
     .navBar form input {
         width: 200px;
     }
+    
 }
 @media (max-width: 768px){
     .navBar .image img {
@@ -82,50 +92,62 @@ a:-webkit-any-link {
         padding-left: 20px;
      }
     .navBar .nav {
-        justify-content: flex-start;
         padding-right: 20px;
+        gap:40px;
      }
     .navBar .nav ul {
         padding: 0;
     }
-    .navBar form input {
-        width: 200px;
-        position: absolute;  
+    .navBar .nav ul li a{
+        font-size: 20px;
     }
-    .navBar form button  {
-        top: 2px;
-        left: 170px;
+    .navBar form input {
+        width: 170px;  
     }
     .navBar .nav img{
-        margin-left: 200px;  
+        display: none; 
     }
 }
 @media (max-width: 576px){
-    .navBar .image img {
-        max-width: 40px;
-        max-height: 40px;
-        border:  6px solid rgba(245, 13, 13, 0.973);
+    .navBar .navBarDesktop {
+        display: none;
     }
-
-    .navBar .nav .menu button {
+    .navBar .navBarMobile {
         display: flex;
-        position: relative;
-        left: 420px;
-        top:3px;
-        width: 30px;
-        height: 30px; 
-    }
-    .navBar .nav .menu button i{
-       font-size: 30px;
-       height: 28px; 
-       background-image: linear-gradient(to bottom right, transparent, rgb(158, 154, 154));  
-    }
-
-    .navBar form {
-        position: relative;
-        left: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
     }
     .navBar form input {
         width: 220px;
     }
+    .navBar .image img {
+        max-width: 60px;
+        max-height: 60px;
+        border:  10px solid rgba(245, 13, 13, 0.973);
+    }
+    .navBar .nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 100px;
+    }
+   
+    .navBar .nav .deploy .btmMenu {
+       font-size: 30px;
+       height: 28px; 
+       background-image: linear-gradient(to bottom right, transparent, rgb(158, 154, 154));  
+    }
+    .navBar .nav .deploy .change {
+        position: absolute;
+        background-color: red;
+        height: 120px;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+    }
+
+    
+
 }

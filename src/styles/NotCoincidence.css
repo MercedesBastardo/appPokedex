@@ -28,3 +28,22 @@
     text-decoration: dashed;
     font-weight: bold;
 }
+@media (max-width: 768px){
+    .toast{
+        height: 60vh;
+        gap: 15px;
+    }
+    .toast h1 {
+        font-size: 25px;
+    }
+    .toast img {
+        height: 200px;
+        width: 300px;  
+    }
+    .toast h3 {
+        font-size: 25px;
+    }
+    .toast h3 a {
+        font-size: 40px;
+    }
+}
