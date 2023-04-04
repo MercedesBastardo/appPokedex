@@ -5,6 +5,7 @@ import PokemonCard from "../components/PokemonCard"
 import { useSelector } from 'react-redux'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Float from '../components/Float'
 
 
 
@@ -103,7 +104,31 @@ const Pokedex = () => {
            disabled= {pag === totalPag}
            >Next</button> 
            </div>
+           <div className='pagination2'>
+                <button className='previus'
+                onClick={()=> setPag( pag - 1)}
+                disabled= {pag === 1}
+                >-</button>
+                
+                <button className='pagActual'
+                onClick={()=> setPag( pag )}
+                >{pag}</button>
+                <button className='pagActual'
+                onClick={()=> setPag( pag + 1)}
+                >{pag +1}</button>
+                <button className='pagActual'
+                onClick={()=> setPag( pag + 2)}
+                >{pag + 2}</button>
+
+                <button className='next'
+                onClick={()=> setPag( pag + 1)}
+                disabled= {pag === totalPag}
+                >+</button> 
+            
+           </div>
+           <Float/>
             <Footer/>
+    
         </div>
 
     )

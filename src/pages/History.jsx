@@ -1,6 +1,7 @@
 import '../styles/history.css'
 import NavBar from '../components/NavBar'
 import Footer from "../components/Footer"
+import Float from '../components/Float'
 
 const History = () => {
     
@@ -16,6 +17,7 @@ const History = () => {
             <img src="/pokemonTv.avif" alt="" />
             <p>These days, the numbers of Pokemon are staggering. His world contains a television series divided into 19 seasons, whose chapters already exceed 900 installments, 18 films released in theaters in Japan (the new one will arrive precisely on July 16), several comic series, television specials, more than fifty video games distributed in several of the Nintendo consoles and now also the market for mobile applications. There is no doubt: 30 years after its debut, the Pokémon world is more alive than ever.</p>
             </div>
+            <Float/>
             <Footer/>
         </div>
     )

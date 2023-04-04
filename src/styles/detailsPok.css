@@ -124,3 +124,35 @@
     color: rgb(75, 75, 60);
 }
 
+@media (max-width: 576px){
+   .pokedexId .part1 .name{ 
+        margin-top: 50px;
+    }
+    .pokedexId .part1 .name .measure {
+        margin-top: 40px;
+    }
+    .pokedexId .part1 .image img {
+        width: 300px;
+        height: 300px;
+        margin: 30px 0 20px 0;
+    }
+    .pokedexId .part1 .image .lotation i, a { 
+        font-size: 20px;
+    }
+    .pokedexId .part1 .image .lotation a { 
+        font-size: 25px;
+    }
+    .pokedexId .part2 {
+        gap: 20px;
+    }
+    .pokedexId .part2 .typeDetails {
+        width: 150px;
+    }
+    .pokedexId .part2 .abilitisDetails {
+        width: 150px;
+    }
+    .pokedexId .part3 ul{
+        column-count:2;
+    }
+}
+

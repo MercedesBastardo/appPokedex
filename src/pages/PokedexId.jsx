@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Float from '../components/Float'
 
 
 const PokedexId = () => {
@@ -67,6 +68,7 @@ const PokedexId = () => {
             </div>
             </div>
             </div>
+            <Float/>
             <Footer/>
         </div>
     )

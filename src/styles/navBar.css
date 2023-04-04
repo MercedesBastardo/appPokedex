@@ -78,16 +78,12 @@ a:-webkit-any-link {
 }
 
 @media (max-width: 1000px){
+    .nav {
+        padding: 30px;
+    }
     .navBar form input {
         width: 200px;
-    }
-    
-}
-@media (max-width: 768px){
-    .navBar .image img {
-        max-width: 50px;
-        max-height: 50px;
-    }
+    }   
     .navBar .image button{
         padding-left: 20px;
      }
@@ -144,7 +140,7 @@ a:-webkit-any-link {
         background-color: red;
         height: 120px;
         width: 100%;
-        top: 100px;
+        top: 90px;
         right: 0px;
     }
 

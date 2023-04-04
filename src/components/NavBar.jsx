@@ -20,7 +20,7 @@ const NavBar = () => {
     }
   
     return (
-        <nav className="navBar">
+        <nav className="navBar" id="navBar">
             <div className="navBarDesktop">
                 <div className='image'>
                     <button onClick={ () => navigate(-1) }> <img src="./atras.png" alt="" /> </button>

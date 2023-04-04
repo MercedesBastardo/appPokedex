@@ -1,0 +1,16 @@
+.float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    border: none;   
+}
+.float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:  10px solid rgba(245, 13, 13, 0.973);
+}
