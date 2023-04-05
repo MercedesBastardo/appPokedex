@@ -46,3 +46,8 @@
     color: transparent;
     font-style: oblique;  
 }
+@media (max-width: 576px){
+    .text1 h2 {
+        font-size: 60px;
+    }
+}
