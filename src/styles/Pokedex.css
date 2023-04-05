@@ -52,15 +52,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 20rem;
+    height: 27rem;
     background-color: black;
     border-radius: 1rem;
 }
 .typePokemons {
     border-radius: 50% 1rem;
-    width: 250px;
-    height: 350px;
+    width: 17rem;
+    height: 22rem;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -69,17 +69,17 @@
 }
 .typePokemons h1 {
     color: aliceblue;
-    font-size:20px;
+    font-size:18px;
 }
 .typePokemons img {
-    width: 180px;
-    height: 170px;
+    width: 150px;
+    height: 140px;
     border-radius: 50%;
     margin: 10px;
 }
 .typePokemons h3 {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
 }
 .typePokemons.bg-green{
     background-image: linear-gradient(to bottom right, transparent, rgb(147, 217, 147));
@@ -200,7 +200,7 @@
     }
     
 }
-@media (max-width: 790px){
+@media (max-width: 768px){
     .pokCard {
         gap: 40px;
     }
@@ -213,47 +213,6 @@
     .pokedex .type select {
         height: 20px;
         margin-top: 10px;  
-    }
-    .pagination {
-        padding: 30px;
-    }
-    .pokemonCard {
-        width: 250px;
-        height: 350px;
-    }
-    .typePokemons {
-        width: 200px;
-        height: 300px;
-    }
-    .typePokemons h1 {
-        font-size:16px;
-    }
-    .typePokemons img {
-        width: 170px;
-        height: 160px;
-    }
-    .typePokemons h3 {
-        font-size: 16px;
-    }
-    .pokemonCard {
-        width: 180px;
-        height: 250px;
-    }
-    .typePokemons {
-        width: 130px;
-        height: 200px;
-    }
-    .typePokemons img {
-        width: 100px;
-        height: 80px;
-        border-radius: 50%;
-        margin: 10px;
-    }
-    .typePokemons h1 {
-        font-size: 14px;
-    }
-    .typePokemons h3 {
-        font-size: 14px;
     }
     .pagination {
         display: none;
@@ -274,5 +233,8 @@
         border-radius: 2rem;
         border: 2px groove rgb(255, 242, 0);
     }
+
+}
+@media (max-width: 450px){
 
 }
