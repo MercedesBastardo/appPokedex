@@ -1,27 +1,35 @@
 
 .login {
-    
+    height:100vh; 
+    background-image: linear-gradient(rgba(241, 240, 240, 0.915), rgba(81, 83, 83, 0.75)), url("/picachu.webp");
+    background-size: cover;    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* background-image: linear-gradient(rgba(251, 252, 254, 0.75), rgba(251, 252, 254, 0.75)), url("/picachu.webp");
-    background-size: cover; */
-    
+    font-size: 16px;
+}
+.text1 h2 {
+    font-size: 6.25em;
+    margin-bottom: 0.5em;
+    background: linear-gradient(yellow,red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: oblique;  
 }
 .circle img {
-    max-width: 100%;
-    width: 400px;
-    height: 250px;
+    max-width: 100%; 
+    max-height: 80%;
 }
-.text1 h1 {
-    font-size: 40px;
+.text2 h1 {
+    font-size: 3.75em;
     text-align: center;
     color: red;
 }
-.text1 h2 {
-    font-size: 15px;
+.text2 h2 {
+    font-size: 1.125em;
     padding-bottom: 10px;
 }
 .login form {
@@ -38,16 +46,13 @@
     border: none;
     background-color: yellow;
 }
-.text2 h2 {
-    font-size: 100px;
-    background: linear-gradient(yellow,red);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-style: oblique;  
-}
+
 @media (max-width: 576px){
     .text1 h2 {
-        font-size: 60px;
+        font-size: 3.75em;
+    }
+    .login form input {
+        width: 150px;
+        height: 30px;
     }
 }

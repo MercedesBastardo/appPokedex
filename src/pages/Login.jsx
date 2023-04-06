@@ -5,23 +5,21 @@ import { changeName } from '../store/slices/user.slice'
 
 const Login = () => {
     const navigate = useNavigate()
-    const dispatch = useDispatch()
-    
+    const dispatch = useDispatch() 
     const handleSubmit = (e) => {
-    e.preventDefault()
-    dispatch(changeName(e.target[0].value))
-    navigate( "/pokedex" )
+        e.preventDefault()
+        dispatch(changeName(e.target[0].value))
+        navigate( "/pokedex" )
     }
-
     return (
         <div className='login'>
-            <div className='text2'>
+            <div className='text1'>
                 <h2> <span> POKEDEX</span></h2>
             </div>
             <div className='circle'>
-                <img src="/pokemon7.jpg" alt="" />
+                <img src="/bola-pokemon.png" alt="" />
             </div>
-            <div className='text1'>
+            <div className='text2'>
                 <h1>"HELLO"</h1>
             <h2>
                 Enter your name and have fun
@@ -32,8 +30,7 @@ const Login = () => {
                 type="text"
                 placeholder='Your name' />
                 <button>Enter</button>
-            </form>
-            
+            </form>         
         </div>
     )     
 }
