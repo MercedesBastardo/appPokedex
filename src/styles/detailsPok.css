@@ -3,29 +3,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 .pokedexId {
     background-color:rgb(237, 241, 232);
-    width: 100%;
-      
+    width: 100%;    
 }
 .pokedexId .part1 {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
-    flex-wrap: wrap;
+    align-items: center; 
 }
 .pokedexId .part1 .name{
     display: flex;
     justify-content: center;
     align-items: center;  
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 9.375rem;
 }
 .pokedexId .part1 .name h2, h1 {
-    font-size: 70px;
+    font-size: 5rem;
     color: rgb(50, 137, 213);
 }
 .pokedexId .part1 .name .measure {
@@ -33,8 +30,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
-    gap: 15px;
+    margin-top: 5rem;
+    gap: 0.9375rem;
 }
 .pokedexId .part1 .name .measure h4 {
     font-size: 30px;
@@ -47,54 +44,54 @@
     flex-direction: column;
 }
 .pokedexId .part1 .image img {
-    width: 450px;
-    height: 450px;
+    margin-top: 6rem;
+    width: 80%;
+    height: 80%;
 }
 .pokedexId .part1 .image .lotation i, a { 
     color: rgb(129, 129, 45);
-    font-size: 30px;
-    padding-right: 10px;
+    font-size: 1.875rem;
+    padding-right: 0.625rem;
 }
 .pokedexId .part1 .image .lotation a { 
     color: rgb(129, 129, 45);
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 .pokedexId .part2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;  
-    gap: 50px; 
+    margin-top: 3.125rem;  
+    gap: 4rem; 
 }
-
 .pokedexId .part2 .typeDetails {
-    font-size: 20px;
+    font-size: 16px;
     color: beige;
     background-image: linear-gradient(to left bottom, transparent, rgb(50,137,213));
-    width: 200px;
-    height: 120px;
+    width: 13vw;
+    height: 17vh;
     text-align: center;
     border: 2px solid rgb(50, 137, 213); 
 }
 .pokedexId .part2 .typeDetails h3{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.pokedexId .part2 .abilitisDetails h3{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 .pokedexId .part2 .abilitisDetails {
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(50, 137, 213);
     background-image: linear-gradient(to left bottom, transparent, beige); 
-    width: 200px;
-    height: 120px;
+    width: 13vw;
+    height: 17vh;
     text-align: center;
     border: 2px solid rgb(50, 137, 213);
-    margin: 40px;   
+    margin: 2.5rem;   
+}
+.pokedexId .part2 .abilitisDetails h3{
+    font-size: 2em;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -107,7 +104,7 @@
     padding: 0 50px 50px 50px;
 }
 .pokedexId .part3 h2 {
-    font-size: 60px;
+    font-size: 5rem;
     color: rgb(226, 146, 146);
     margin: 40px 0 30px 0;
 }
@@ -116,43 +113,97 @@
     column-gap:100px;
     column-rule:4px double rgb(171, 85, 85);
     list-style: none;
-    padding-top: 10px;
+    padding-top: 0.625rem;
     color: rgb(75, 75, 60);
 }
 .pokedexId .part3 ul li {
-    font-size: 18px;
+    font-size: 2rem;
     color: rgb(75, 75, 60);
 }
-
-@media (max-width: 576px){
-   .pokedexId .part1 .name{ 
-        margin-top: 50px;
+@media (max-width: 1000px){
+    .pokedexId .part2 {
+        gap: 6rem;
     }
-    .pokedexId .part1 .name .measure {
-        margin-top: 40px;
+    .pokedexId .part2 .typeDetails h3{
+        font-size: 1.8rem;
+    }
+    .pokedexId .part2 .abilitisDetails h3{
+        font-size: 1.8rem;
+    }
+    .pokedexId .part3 h2 {
+        font-size: 4rem;
+    }
+    .pokedexId .part3 ul{
+        column-gap: 80px; 
+    }
+    .pokedexId .part3 ul li {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .pokedexId .part1 {
+        margin-left: 80px;
+    }
+    .pokedexId .part1 .name h2, h1 {
+        font-size: 3rem;
     }
     .pokedexId .part1 .image img {
-        width: 300px;
-        height: 300px;
-        margin: 30px 0 20px 0;
+        width: 50%;
+        height: 50%;
+    }
+    .pokedexId .part2 .typeDetails {
+        width: 17vw;
+        height: 17vh;
+    }
+    .pokedexId .part2 .abilitisDetails {
+        width: 17vw;
+        height: 17vh;
+    }
+    .pokedexId .part3 ul{
+        column-count: 3;
+    }
+}
+@media (max-width: 576px){
+    .pokedexId .part1 {
+        margin-left: 0;
+    }
+   .pokedexId .part1 .name{ 
+        margin-top: 7rem;
+    }
+    .pokedexId .part1 .name h2, h1 {
+        color: rgb(50, 110, 213);
+    }
+    .pokedexId .part1 .name .measure {
+        margin-top: 2.5rem;
+    }
+    .pokedexId .part1 .name .measure h4 {
+        color: rgb(222, 88, 88); 
+    }
+    .pokedexId .part1 .image {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.2;
     }
     .pokedexId .part1 .image .lotation i, a { 
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .pokedexId .part1 .image .lotation a { 
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
     .pokedexId .part2 {
+        margin-top: 5rem;
         gap: 20px;
     }
     .pokedexId .part2 .typeDetails {
-        width: 150px;
+        width: 27vw;
     }
     .pokedexId .part2 .abilitisDetails {
-        width: 150px;
+        width: 27vw;
     }
     .pokedexId .part3 ul{
         column-count:2;
     }
 }
+
 

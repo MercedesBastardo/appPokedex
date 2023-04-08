@@ -9,7 +9,5 @@ export const searchName= createSlice({
         }
     }
 })
-
 export const { namePok } = searchName.actions;
-
 export default searchName.reducer;

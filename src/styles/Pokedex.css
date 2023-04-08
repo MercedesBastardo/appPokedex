@@ -1,5 +1,4 @@
 /* este es el header del pokedex */
-
 .pokedex .header {
     display: flex;
     justify-content: space-between;
@@ -153,8 +152,6 @@
     background-image: linear-gradient(to bottom right, transparent, rgb(79, 75, 75));
     border: 2px groove black;
 }
-
-
 /* paginacion */
 .pagination {
     display: flex;
@@ -184,7 +181,6 @@
     width: 40px;
     height: 20px;
 }
-
 @media (max-width: 1000px){
     .pokedex .header .text h1 {
         font-size: 35px;
@@ -197,8 +193,7 @@
     }
     .pokedex .type select {
         margin-top: 20px;  
-    }
-    
+    }   
 }
 @media (max-width: 768px){
     .pokCard {
@@ -233,8 +228,4 @@
         border-radius: 2rem;
         border: 2px groove rgb(255, 242, 0);
     }
-
-}
-@media (max-width: 450px){
-
 }

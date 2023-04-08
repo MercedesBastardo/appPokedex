@@ -21,8 +21,8 @@ const NavBar = () => {
                 <div className='image'>
                     <button onClick={ () => navigate(-1) }> <img src="./atras.png" alt="" /> </button>
                 </div>
-                <div className='nav'>
-                    <ul className='change' id="change">
+                <div className ='nav'>
+                    <ul className ='change' id="change">
                         <li> <Link to={`/`}>Login</Link> </li>
                         <li> <Link to={`/pokedex`}>Home</Link> </li>
                         <li> <Link to={`/history`}>Pokemons History</Link> </li>
@@ -68,6 +68,5 @@ const NavBar = () => {
                 </div>
             </div>
         </nav>
-    )
-}
+    )}
 export default NavBar

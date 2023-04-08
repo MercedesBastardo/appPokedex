@@ -6,13 +6,9 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import Float from '../components/Float'
 
-
 const PokedexId = () => {
-
     const { name } = useParams()
     const [ pokemon, setPokemon ] = useState({})
-  
-
     useEffect(() => {
       axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
         .then((resp)=> setPokemon( resp?.data ))
@@ -40,37 +36,33 @@ const PokedexId = () => {
                         <a href={`${pokemon?.location_area_encounters}`}>Lotation</a>
                         </section>
                     </div>
-
                 </div>
-            <div className='part2'>
-                
-                <section className='typeDetails'>
-                    <h3>Types</h3>
-                   <p>{pokemon?.types?.[0]?.type?.name}</p>
-                   <p>{pokemon?.types?.[1]?.type?.name}</p> 
-                </section>
-                <section className='abilitisDetails'>
-                    <h3>Abilities</h3>
-                   <p>{pokemon?.abilities?.[0]?.ability?.name}</p>
-                   <p>{pokemon?.abilities?.[1]?.ability?.name}</p> 
-                </section>
-            </div>
-            <div className='part3'>
-                <h2>Movements</h2>
-              
-                <ul>
-                {
-                    pokemon?.moves?.map( moves => (
-                        <li key={moves?.move?.name}>{moves?.move?.name}</li>
-                    ) )
-                }
-                </ul>
-            </div>
+                <div className='part2'>
+                    <section className='typeDetails'>
+                        <h3>Types</h3>
+                        <p>{pokemon?.types?.[0]?.type?.name}</p>
+                        <p>{pokemon?.types?.[1]?.type?.name}</p> 
+                    </section>
+                    <section className='abilitisDetails'>
+                        <h3>Abilities</h3>
+                        <p>{pokemon?.abilities?.[0]?.ability?.name}</p>
+                        <p>{pokemon?.abilities?.[1]?.ability?.name}</p> 
+                    </section>
+                </div>
+                <div className='part3'>
+                    <h2>Movements</h2>
+                    <ul>
+                        {
+                            pokemon?.moves?.map( moves => (
+                                <li key={moves?.move?.name}>{moves?.move?.name}</li>
+                            ) )
+                        }
+                    </ul>
+                </div>
             </div>
             </div>
             <Float/>
             <Footer/>
         </div>
-    )
-}
+    )}
 export default PokedexId

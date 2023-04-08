@@ -3,8 +3,7 @@ import NavBar from '../components/NavBar'
 import Footer from "../components/Footer"
 import Float from '../components/Float'
 
-const History = () => {
-    
+const History = () => { 
     return (
         <div>
             <NavBar/>

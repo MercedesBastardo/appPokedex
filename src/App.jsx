@@ -8,32 +8,20 @@ import History from './pages/History'
 import Search from './pages/Search'
 import PokedexId from './pages/PokedexId'
 
-
-
 function App() {
- 
-  
   return (
     <div className="App">
       	<HashRouter>
 			<Routes>
 				<Route path="/" element={<Login />} />
-
-				<Route element={<Protected />}>
-							
+				<Route element={<Protected />}>			
 					<Route path="/pokedex" element={<Pokedex />} />
 					<Route path="/history" element={<History />} />
 					<Route path="/search" element={<Search />} />
-					<Route path="/pokemons/:name" element={<PokedexId />} />
-						     
+					<Route path="/pokemons/:name" element={<PokedexId />} />	     
 				</Route>
-
-
 			</Routes>
-		</HashRouter>
-		
+		</HashRouter>	
     </div>
-  )
-}
-
+  )}
 export default App
