@@ -130,7 +130,7 @@ a:-webkit-any-link {
     .navBar .nav .deploy .change {
         position: absolute;
         background-color: red;
-        height: 25%;
+        height: 30%;
         width: 100%;
         top: 100px;
         right: 0px;
