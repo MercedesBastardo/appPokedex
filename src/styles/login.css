@@ -3,6 +3,8 @@
     height:100vh; 
     background-image: linear-gradient(rgba(241, 240, 240, 0.915), rgba(81, 83, 83, 0.75)), url("/picachu.webp");
     background-size: cover;    
+}
+.containerLogin {
     display: flex;
     justify-content: center;
     align-items: center;

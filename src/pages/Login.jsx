@@ -13,6 +13,7 @@ const Login = () => {
     }
     return (
         <div className='login'>
+            <div className='containerLogin'>
             <div className='text1'>
                 <h2> <span> POKEDEX</span></h2>
             </div>
@@ -30,7 +31,8 @@ const Login = () => {
                 type="text"
                 placeholder='Your name' />
                 <button>Enter</button>
-            </form>         
+            </form>  
+            </div>       
         </div>
     )     
 }
