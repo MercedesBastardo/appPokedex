@@ -130,13 +130,13 @@ a:-webkit-any-link {
     .navBar .nav .deploy .change {
         position: absolute;
         background-color: red;
-        height: 20%;
+        height: 25%;
         width: 100%;
         top: 100px;
         right: 0px;
     }
     .navBar .nav .deploy .change li a{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bolder;
         line-height: 4rem;
     }
